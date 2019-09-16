@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng build --prod; rm ./dist/CNAME; cp favicon.ico ./dist/favicon.ico; echo 'www.pnw.technology' >> ./dist/CNAME; git add --all; git commit -a -m 'Deploy'; git push; git push origin --delete master; git subtree push  -P dist origin master"
+
   },
   "private": true,
   "dependencies": {
