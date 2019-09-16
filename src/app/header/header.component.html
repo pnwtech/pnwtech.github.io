@@ -1,61 +1,59 @@
-<div class="row">
-    <!--Column-->
-    <div class="col-md-3">
-        <!--Panel-->
-        <button type="button" class="card card-body text-center hoverable waves-light" data-toggle="modal" data-target="#basicExample" (click)="demoBasic.show()" mdbWavesEffect>
-            <h1 class="sacramento redColor card-title">pnw tech</h1>
-        </button>
-        <!--/.Panel-->
-    </div>
-    <!--/.Column-->
-</div>
-
-<div class="row pt-5 mt-5">
-    <!-- Intro Section -->
-    <div class="col-md-3 wow fadeIn mb-3"></div>
-    <div class="col-md-6 wow fadeIn mb-3">
-        <div class="row pt-5 mt-3 w-100">
-            <div class="col-md-7 wow fadeIn text-right">
-                <h1 class="h1 display-4 font-bold wow fadeInUp">we build</h1>
+<!-- Main navigation -->
+<header>
+        <!--Navbar-->
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top z-depth-0"
+            [containerInside]="false">
+            <mdb-navbar-brand>
+                <a class="navbar-brand" href="#">
+                    <h1 class="sacramento redColor card-title">pnw tech</h1>
+                </a>
+            </mdb-navbar-brand>
+            <!-- Collapsible content -->
+            <links>
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="https://twitter.com/pnwtechnology" class="nav-link">
+                            <mdb-icon fab icon="twitter"></mdb-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://angel.co/company/pnw-technology">
+                            <mdb-icon fab icon="angellist"></mdb-icon>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Links -->
+            </links>
+            <!-- Collapsible content -->
+        </mdb-navbar>
+        <!--/.Navbar-->
+        <!-- Full Page Intro -->
+        <div class="view" style="background-image: url('./assets/bg.png'); background-repeat: no-repeat; background-size: contain; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6 text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+                            <h1 class="h1-responsive font-weight-bold mt-sm-5">The intersection of business and technology</h1>
+                            <br>
+                            <h6 class="mb-4">pnw tech is a network of business-minded technologists helping to incubate and produce business ideas through technology in the Pacific Northwest.
+                            </h6>
+                            <a href="#contact" mdbBtn color="red" mdbWavesEffect>Contact Sales</a>
+                        </div>
+                        <!--Grid column-->
+                        
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
             </div>
-            <div class="col-md-5 pl-0 wow fadeIn">
-                <h1 class="h1 display-4 font-bold wow fadeInUp">
-                    <span class="greenColor rw-words rw-words-1">
-                        <span>dreams</span>
-                        <span>companies</span>
-                        <span>entrepreneurs</span>
-                        <span>dreams</span>
-                        <span>companies</span>
-                        <span>entrepreneurs</span>
-                        <span>dreams</span>
-                        <span>companies</span>
-                        <span>entrepreneurs</span>
-                    </span>
-                </h1>
-            </div>
+            <!-- Mask & flexbox options-->
         </div>
-    </div>
-    <div class="col-md-3 wow fadeIn mb-3"></div>
-</div>
-
- <div class="row pb-5 mb-5">
-    <div class="col-md-2 wow fadeIn mb-3"></div>
-    <div class="col-md-8 wow fadeIn mb-3 text-center">
-        <h5 class="ovo spacing-1 mb-5 wow fadeInUp" data-wow-delay="0.2s">pnw tech is a network of entrepreneurs helping to incubate business ideas through technology in the Pacific Northwest. we partner with founders to create and build companies to scale them to their maximum potential.</h5>
-    </div>
-    <div class="col-md-2 wow fadeIn mb-3"></div>
-</div>
-
-
-<!-- menu -->
-<div mdbModal #demoBasic="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content transparent z-depth-0 text-center">
-            <a href="/"><h1 type="button" class="waves-light mt-5 muli yellowColor spacing-6" mdbWavesEffect>start</h1></a>
-            <a><h1 type="button" class="waves-light mt-5 muli yellowColor spacing-6" onClick="document.getElementById('contact').scrollIntoView();" (click)="demoBasic.hide()" mdbWavesEffect>say hi</h1></a>
-            <a><h1 type="button" class="waves-light mt-5 muli yellowColor spacing-6" onClick="document.getElementById('process').scrollIntoView();" (click)="demoBasic.hide()" mdbWavesEffect>our process</h1></a>
-            <h1 type="button" class="waves-light mt-5 muli yellowColor spacing-6" data-dismiss="modal" (click)="demoBasic.hide()" mdbWavesEffect><i class="fa fa-times"></i></h1>
-        </div>
-    </div>
-</div>
-<!-- /.menu -->
+        <!-- Full Page Intro -->
+    </header>
+    <!-- Main navigation -->
+    
